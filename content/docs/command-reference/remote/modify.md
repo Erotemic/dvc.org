@@ -768,12 +768,16 @@ more information.
   $ dvc remote modify myremote url \
         osf://osf.io/path/to/dir
 
-- `project` - [OSF](https://osf.io/) project name. You can see it in the `url` line
-  of your project page.
+  ```
+
+- `project` - [OSF](https://osf.io/) project name. You can see it in the `url`
+  line of your project page.
 
   ```dvc
   $ dvc remote modify myremote project <project_name>
-  
+
+  ```
+
 - `user` - username (e-mail) that you specify during registration.
   ```dvc
   $ dvc remote modify myremote user \
@@ -784,13 +788,12 @@ more information.
   $ dvc remote modify osfremote --local password 12345
   ```
 
-> The username and password (may) contain sensitive user info.
-> Therefore, it's safer to add them with the `--local` option, so they're
-> written to a Git-ignored config file.
-  
-  Also it is possible to specify password by setting
-  envirement variable `OSF_PASSWORD`. Run
-  ```$ export OSF_PASSWORD=12345```
+> The username and password (may) contain sensitive user info. Therefore, it's
+> safer to add them with the `--local` option, so they're written to a
+> Git-ignored config file.
+
+Also it is possible to specify password by setting envirement variable
+`OSF_PASSWORD`. Run `$ export OSF_PASSWORD=12345`
 
 </details>
 
